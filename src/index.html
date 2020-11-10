@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>MyAppfirst</title>
@@ -7,7 +8,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
-  <app-root></app-root>
+  <div class="grid-container">
+    <div class="calculations">
+
+      <select class="constituents" id="select1">
+        <option value="0"></option>
+        <option value="1">!</option>
+      </select>
+      (
+      <input class="constituents"id="var" type="number" min="0" max="1" step="1">
+
+      <select class="constituents" id="select2">
+        <option value="1">&&</option>
+        <option value="0">||</option>
+      </select>
+
+      <input class="constituents" id="var1" type="number" min="0" max="1" step="1">
+      )
+      <span class="constituents" id="result"></span>
+
+      <br />
+      <input class="constituents" type="button" value="Вычислить" onclick="calc();">
+
+      <div class="constituents" id="info"></div>
+    </div>
+  </div>
 </body>
+
 </html>
